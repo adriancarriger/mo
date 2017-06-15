@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mo": "./index.js"
+    "mo": "./src/index.js"
   },
   "author": "Adrian Carriger",
   "license": "MIT"
