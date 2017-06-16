@@ -10,5 +10,11 @@
     "mo": "./src/index.js"
   },
   "author": "Adrian Carriger",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "clear": "^0.0.1",
+    "figlet": "^1.2.0",
+    "minimist": "^1.2.0"
+  }
 }
