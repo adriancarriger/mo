@@ -2,19 +2,23 @@
   "name": "mo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "mo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mo": "./src/index.js"
+    "mo": "./src/mo.js"
   },
   "author": "Adrian Carriger",
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.3",
     "clear": "^0.0.1",
+    "commander": "^2.9.0",
     "figlet": "^1.2.0",
-    "minimist": "^1.2.0"
+    "js-yaml": "^3.8.4",
+    "minimist": "^1.2.0",
+    "mv": "^2.1.1",
+    "ncp": "^2.0.0"
   }
 }
