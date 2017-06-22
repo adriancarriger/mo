@@ -9,7 +9,8 @@ program
   .version('0.0.1')
   .command('init', 'init a new project in current directory')
   .command('clone <url>', 'git clones a project into mo format')
-  .command('import', 'gets repo from mo-dist, applies mo plugins, and puts it inside mo-src');
+  .command('import', 'gets repo from mo-dist, applies mo plugins, and puts it inside mo-src')
+  .command('export', 'gets repo from mo-src, applies mo plugins, and puts it inside mo-dist');
 
 if (!process.argv.slice(2).length) {
   clear();
