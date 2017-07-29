@@ -3,7 +3,6 @@ const path = require('path');
 
 const mkdirp = require('mkdirp');
 const yaml = require('js-yaml');
-const { ncp } = require('ncp');
 
 function getCurrentDirectoryBase() {
   return path.basename(process.cwd());

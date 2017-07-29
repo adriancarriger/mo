@@ -1,14 +1,14 @@
 'use strict';
 
 const path = require('path');
-const { copyPromise } = require('./util');
+const fs = require('fs-extra');
 
 exports.up = function(config, directory) {
   return Promise.all(config.map((mapString) => {
-    const map = mapString.split(':');
-    const source = path.normalize(`${process.cwd()}/${map[0]}`);
-    const destination = path.normalize(`${directory}/${map[1]}/${map[0]}`);
-    return copyPromise(source, destination);
+    const [sourcePath, destPath] = mapString.split(':');
+    const source = path.normalize(`${process.cwd()}/${sourcePath}`);
+    const destination = path.normalize(`${directory}/${destPath}/${sourcePath}`);
+    return fs.copy(source, destination, { overwrite: true });
   }));
 }
 
