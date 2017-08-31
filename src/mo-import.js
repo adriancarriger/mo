@@ -8,6 +8,7 @@ const tempDir = path.normalize(`${process.cwd()}/.mo-temp`);
 fs.copy(`${process.cwd()}/mo-dist`, tempDir, { overwrite: true })
   .then(() => getYaml(`${process.cwd()}/mo.yml`))
   .then(({plugins}) => {
+    if (!plugins) { return; }
     return Promise.all(Object.keys(plugins).map(pluginName => {
       const { up } = require(`${process.cwd()}/mo-plugins/${pluginName}/index.js`);
       const pluginConfig = plugins[pluginName];
