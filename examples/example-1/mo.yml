@@ -1,4 +1,4 @@
 version: '0.0'
 plugins:
   add-files:
-    - 'my-files:some-location'
+    - 'my-files:.'
