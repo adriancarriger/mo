@@ -6,7 +6,11 @@ Making a CLI
 
 ## Commands
 
-- `mo init`
-- `mo clone <repo>`
-- `mo import`
-- `mo export`
+* `mo init`
+* `mo clone <repo>`
+* `mo import`
+* `mo export`
+
+## License
+
+mo is licensed under the MIT Open Source license. For more information, see the [LICENSE](LICENSE) file in this repository.

@@ -9,7 +9,7 @@
   "bin": {
     "mo": "./src/mo.js"
   },
-  "author": "Adrian Carriger",
+  "author": "Adrian Carriger <hello@adriancarriger.com> (http://adriancarriger.com)",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
